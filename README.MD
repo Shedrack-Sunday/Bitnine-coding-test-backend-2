@@ -32,9 +32,7 @@
 
 # 📖 Catalog of Things <a name="about-project"></a>
 
-> In this project, we I created a function that returns fibonacci sequence based on the following arithmetic operations (+, -, *, /) and conditions.
->The fibonacci function should is  implemented using Dynamic Programming.
-
+> In this project,  I created an Implemention of the  piecewise recurrence relation in the 3 different ways and Explained the differences (advantages, disadvantages) between the 3.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -44,7 +42,7 @@
 <details>
   <summary>C</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a></li>
   </ul>
 </details>
 
@@ -54,9 +52,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **fibonacci sequence implemention**
-- **fibonacci function added**
-- **implemention  using Dynamic Programming.**
+- **piecewise recurrence relation**
+- **fibonacci solution used**
+- **Comparing solutions  made.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,28 +78,65 @@ Clone this repository to your desired folder:
 
 
   cd my-folder
-  git clone https://github.com/Shedrack-Sunday/Bitnine-Test-Backend-1
+  git clone https://github.com/Shedrack-Sunday/Bitnine-Test-Backend-2
 
 
 ## How to Compile
 
-1. Make sure you have GCC installed on your system. If not, you can download it from the official GCC website (https://gcc.gnu.org/) and follow the installation instructions for your operating system.
+# Fibonacci Recurrence Relation - C Implementation
 
-2. Download the source code files (`fibonacci.c`) from the repository.
+This project provides three different implementations of the Fibonacci recurrence relation in C programming language. The Fibonacci sequence is defined as F(n) = F(n-3) + F(n-2), with initial values F(0) = 0, F(1) = 1, and F(2) = 2.
 
-3. Open a terminal or command prompt and navigate to the directory where the source code file is located.
+## Development Environment
 
-4. Run the following command to compile the source code:
+The source code for this project was developed and tested using the following environment:
 
-   ```shell
-   gcc fibonacci.c -o fibonacci
+- Operating System: [Specify the operating system you used, e.g., Windows 10, macOS Mojave, Ubuntu 20.04]
+- Compiler: [Specify the compiler and version, e.g., GCC 9.3.0, Clang 12.0.0]
+
+## Compilation
+
+To compile the source code, follow these steps:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the source code files.
+
+For the recursive implementation:
+3. Run the following command:
    ```
-## test
+   gcc recursive_fibonacci.c -o recursive_fibonacci
+   gcc iterative_fibonacci.c -o iterative_fibonacci
+   gcc memoization_fibonacci.c -o memoization_fibonacci
+   ```
+## Execution   
+```
+./recursive_fibonacci
+./iterative_fibonacci
+./memoization_fibonacci
+```
 
-```
-gcc test_fibonacci.c -o test_fibonacci
-./test_fibonacci
-```
+## Comparing solutions:
+
+### Recursive Method:
+
+Advantages include a natural and intuitive representation of the issue.
+Simple to comprehend and use.
+The method is inefficient for large values of n since it repeatedly calculates the same Fibonacci numbers.
+cons: Due to redundant calculations, it has a time complexity that is exponential, O(2n).
+
+### Looping Iterative Process:
+
+Benefits: More effective than the recursive method.
+Without repeating calculations, it iteratively calculates Fibonacci numbers.
+It is O(n) linearly complex in time.
+
+Cons: The code could be a little bit more complicated than with the recursive method.
+Not as simple to understand the problem as the recursive method.
+
+### Memorization Technique:
+
+Benefits: Effective for large values of n because it stores previously calculated Fibonacci numbers in an array to prevent repeated calculations.
+It has an O(n)-like linear time complexity.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -110,16 +145,12 @@ gcc test_fibonacci.c -o test_fibonacci
 
 ## 👥 Authors <a name="authors"></a>
 
-> All of the collaborators of this project.
 
 👤 **Didier Peran Ganthier**
 
 - GitHub: [@Shedrack-Sunday](https://github.com/hedrack-Sunday)
 - Twitter: [@didierganthier_](https://twitter.com/DeleSundayS)
 - LinkedIn: [Shedrack Bamidele Sunday](https://linkedin.com/in/Shedrack-Sunday)
-
-
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
